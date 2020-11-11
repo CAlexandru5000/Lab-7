@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: green;
+}
+h1 {
+color: red;
+text-align: left;
+}
+h2 {
+color: red;
+text-align: left;
+}
+p {
+color: blue;
+text-align: left;
+}
+table, th, td {
+border: 1px solid black;
+color: yellow;
+}
+ul {
+list-style-type: square;
+background: purple;
+padding: 18px;
+}
+img {
+width: 650px;
+height: 650px;
+opacity: 0.7;
+</style>
+<script>
+function functie(){
+document.getElementById("nume").innerHTML = "Filolog Ciobanu Alexandru"
+document.getElementById("poza").src="poza.jpg"
+document.body.style.backgroundColor="Brown"
+document.getElementById("poza").style.opacity="0.9";
+document.getElementById("poza").style.border="7px black";
+var tabel =document.getElementById("tabel");
+tabel.rows[1].cells[0].innerHTML="Istorie"
+tabel.rows[2].cells[0].innerHTML="Desen"
+tabel.rows[3].cells[0].innerHTML="Limba Romana"
+var par=document.getElementsByTagName("p");
+var i;
+for(i=0; i<par.length; i++) {
+par[i].style.color="green";
+}
+}
+</script>
+</head>
+<body>
+<h1 id="nume">Ciobanu Alexandru</h1>
+<img id="poza" src="C:\Users\Alexandru\Pictures\HTML.jpg">
+<p>ciobanualexandru5000@gmail.com</p>
+<p>O minte educata iti permite sa sustii un gand fara a-l accepta</p>
+<p>Discipline preferate: </p>
+<p onmouseover="varsta()" id="varstamea">2001</p>
+<button onclick="functie()">Alta Viata</button>
+<table id="tabel">
+<tr>
+<th> Discipline </th>
+<th> Anul </th>
+<tr>
+<td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Componente si circuite electronice pasive</a> </td>
+<td> Anul 1 </td>
+</tr>
+<tr>
+<td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">Programarea calculatoarelor-Limbaje</a> </td>
+<td> Anul 1 </td>
+</tr>
+<tr>
+<td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3128.pdf">Proiectarea asistata de calculator</a> </td>
+<td> Anul 2 </td>
+</tr>
+</table>
+<h2>Hobby-uri</h2>
+<ul>
+<li>Gaming</li>
+<li>Filme</li>
+<li>Muzica</li>
+</ul>
+<a href="file:///D:/Catalog.html">Inapoi</a>
+</body>
+</html>
